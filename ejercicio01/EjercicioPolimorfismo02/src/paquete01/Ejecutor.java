@@ -5,8 +5,6 @@
  */
 package paquete01;
 
-import java.util.Scanner;
-
 import paquete02.Automovil;
 import paquete03.AutomovilGasolina;
 import paquete04.AutomovilDiesel;
@@ -24,10 +22,10 @@ public class Ejecutor {
         AutomovilGasolina auto1 = new AutomovilGasolina();
         auto1.establecerNombre(nombreUno);
         auto1.establecerPlaca(placaUno);
-        auto1.establecerCostoGalon(4.50);
-        auto1.establecerNumGalon(10);
+        auto1.establecerCostoGalon(3);
+        auto1.establecerNumGalon(20);
+        auto1.establecerIva(0.1);
         auto1.calcularValorCancelar();
-
         System.out.printf("%s", auto1);
 
         String nombreDos = "Andre";
@@ -37,8 +35,8 @@ public class Ejecutor {
         auto2.establecerPlaca(placaDos);
         auto2.establecerCostoGalon(5.50);
         auto2.establecerNumGalon(9);
+        auto2.establecerIva(0.1);
         auto2.calcularValorCancelar();
-
         System.out.printf("%s", auto2);
 
         
@@ -48,7 +46,7 @@ public class Ejecutor {
         auto3.establecerNombre(nombreTres);
         auto3.establecerPlaca(placaTres);
         auto3.setNumLitros(20);
-        auto3.setCostoLitro(5);
+        auto3.setCostoLitro(2);
         auto3.setDescuentoLitros(0.1);
         auto3.calcularValorCancelar();
         System.out.printf("%s", auto3);

@@ -27,11 +27,11 @@ public abstract class Automovil {
     public abstract void calcularValorCancelar();
     
     public String obtenerNombre(){
-        return nombrePro.toUpperCase();
+        return nombrePro;
     }
 
     public String obtenerPlaca(){
-        return placa;
+        return placa.toUpperCase();
     }
 
     public double obtenerValorCancelar(){

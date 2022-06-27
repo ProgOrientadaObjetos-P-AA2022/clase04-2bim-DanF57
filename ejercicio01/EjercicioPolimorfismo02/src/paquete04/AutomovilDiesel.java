@@ -48,11 +48,13 @@ public class AutomovilDiesel extends Automovil{
     @Override 
     public String toString(){
         String cadena = String.format("Propietario: %s\n"
-        + "Placa: %s\n" + 
-        "Numéro de galones máximos: %.2f\n"+
-        "Costo por galón: %.2f\nDescuento: %.2f\nValor a cancelar: %.2f\n\n", 
+        + "Placa: %s\n" 
+        + "Numéro de galones máximos: %.2f\n"
+        + "Costo por galón: %.2f\n" 
+        + "Descuento: %.2f\n" 
+        + "Valor a cancelar: %.2f\n\n", 
         nombrePro, 
-        placa, 
+        obtenerPlaca(), 
         numLitros, 
         costoLitros, 
         descuentoLitros,
