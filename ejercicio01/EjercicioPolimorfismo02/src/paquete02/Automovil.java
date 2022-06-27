@@ -9,6 +9,32 @@ package paquete02;
  *
  * @author reroes
  */
-public class Automovil {
+public abstract class Automovil {
+    //nombres del propietario, placa, valor a cancelar.
+
+    protected String nombrePro;
+    protected String placa;
+    protected double valorCancelar;
+
+    public void establecerNombre(String n){
+        nombrePro = n; 
+    }
+
+    public void establecerPlaca(String n){
+        placa = n;
+    }
+
+    public abstract void calcularValorCancelar();
     
+    public String obtenerNombre(){
+        return nombrePro.toUpperCase();
+    }
+
+    public String obtenerPlaca(){
+        return placa;
+    }
+
+    public double obtenerValorCancelar(){
+        return valorCancelar;
+    }
 }
